@@ -93,7 +93,10 @@ tr_tag = tr_tag_list[0]
 tr_tag
 
 img_tag = tr_tag.find("img")
+img_tag
+
 a_tag = tr_tag.find("a")
+a_tag
 
 nickname_td = tr_tag.find_all("td")[-1]
 desc_td = tr_tag.find_all("td")[-2]
@@ -101,7 +104,7 @@ desc_td.text
 
 nickname_td
 nickname_td.text
-nickname_td.get_text(separator=" ", strip=True)
+print(nickname_td.get_text(separator=" ", strip=True))
 
 img_tag
 

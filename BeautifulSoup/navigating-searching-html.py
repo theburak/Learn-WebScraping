@@ -29,8 +29,10 @@ soup = BeautifulSoup(html, "html.parser")
 soup.a
 soup.find("a", attrs={"class": "link", "target": "blank"})
 
-soup.find_all("li")
+print(soup.find_all("li"))
 
 li_elements = soup.find_all("li", attrs={"class": "list-item"})
 li_elements
-li_elements[-1]
+print (li_elements[-1])
+
+print (li_elements[0].text)
